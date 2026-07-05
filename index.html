@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Counter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>Character Counter</h1>
+  <div class="subtitle">Draft your note below</div>
+
+  <div class="textarea-wrap">
+    <textarea id="textInput" maxlength="300" placeholder="Begin typing here..."></textarea>
+  </div>
+
+  <div class="meta-row">
+    <div class="count-label"><span id="charCount">0</span> / 300 characters</div>
+    <div class="ring-wrap">
+      <svg width="46" height="46" viewBox="0 0 46 46">
+        <circle class="ring-bg" cx="23" cy="23" r="19"></circle>
+        <circle class="ring-progress" id="ringProgress" cx="23" cy="23" r="19"
+                stroke-dasharray="119.4" stroke-dashoffset="119.4"></circle>
+      </svg>
+      <div class="ring-count" id="ringPercent">0%</div>
+    </div>
+  </div>
+
+  <button id="submitBtn">Submit</button>
+  <div class="status" id="statusMsg"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
